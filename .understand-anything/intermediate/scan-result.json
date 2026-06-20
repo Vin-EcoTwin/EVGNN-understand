@@ -1,0 +1,320 @@
+{
+  "scanMetadata": {
+    "scanDate": "2026-06-20 05:36:29",
+    "projectRoot": "/home/ursuswh/Vfluxion",
+    "scanVersion": "1.0"
+  },
+  "project": {
+    "projectName": "EV-GNN",
+    "description": "Electric Vehicle Graph Neural Network - RL agent training for EV charging optimization using Graph Neural Networks",
+    "primaryLanguage": "python",
+    "frameworks": [
+      "Reinforcement Learning",
+      "Graph Neural Networks",
+      "SAC",
+      "TD3",
+      "Stable-Baselines3"
+    ],
+    "languages": [
+      "python",
+      "yaml",
+      "markdown",
+      "text"
+    ]
+  },
+  "statistics": {
+    "totalFiles": 47,
+    "filesByLanguage": {
+      "unknown": 1,
+      "markdown": 1,
+      "python": 28,
+      "image": 2,
+      "yaml": 14,
+      "text": 1
+    }
+  },
+  "files": [
+    {
+      "path": "EV-GNN/LICENSE",
+      "language": "unknown",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/README.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/component_analysis.py",
+      "language": "python",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/discrete_eda.py",
+      "language": "python",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/generalization_eda.py",
+      "language": "python",
+      "sizeLines": 564,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/gnn_fx_explain.py",
+      "language": "python",
+      "sizeLines": 587,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/icon/car.png",
+      "language": "image",
+      "sizeLines": 210,
+      "fileCategory": "data"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/icon/charging-station.png",
+      "language": "image",
+      "sizeLines": 158,
+      "fileCategory": "data"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/max_performance_results.py",
+      "language": "python",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/mean_performance_comparison.py",
+      "language": "python",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/parse_evaluator_results.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/rewards_eda.py",
+      "language": "python",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/sb3_reward_eda.py",
+      "language": "python",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/state_action_eda.py",
+      "language": "python",
+      "sizeLines": 386,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/v2g_rewards_eda.py",
+      "language": "python",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/Results_Analysis/v2g_stats eda.py",
+      "language": "python",
+      "sizeLines": 276,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/actionSAC.py",
+      "language": "python",
+      "sizeLines": 204,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/model.py",
+      "language": "python",
+      "sizeLines": 578,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/old_actionSAC.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/old_model.py",
+      "language": "python",
+      "sizeLines": 532,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/sac.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/SAC/utils.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/TD3/TD3.py",
+      "language": "python",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/TD3/TD3_ActionGNN.py",
+      "language": "python",
+      "sizeLines": 526,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/TD3/TD3_GNN.py",
+      "language": "python",
+      "sizeLines": 490,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/TD3/old_TD3_ActionGNN.py",
+      "language": "python",
+      "sizeLines": 482,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_100.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_1000.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_100_g1.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_100_g2.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_100_g3.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_500.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_500_g1.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_500_g2.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_500_g3.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/PublicPST_GNN_example.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "language": "yaml",
+      "sizeLines": 127,
+      "fileCategory": "config"
+    },
+    {
+      "path": "EV-GNN/evaluator.py",
+      "language": "python",
+      "sizeLines": 709,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/requirements.txt",
+      "language": "text",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "EV-GNN/train_RL_GNN.py",
+      "language": "python",
+      "sizeLines": 575,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/train_baselines.py",
+      "language": "python",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/utils/action_wrapper.py",
+      "language": "python",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/utils/replay_buffer.py",
+      "language": "python",
+      "sizeLines": 474,
+      "fileCategory": "code"
+    },
+    {
+      "path": "EV-GNN/utils/state.py",
+      "language": "python",
+      "sizeLines": 693,
+      "fileCategory": "code"
+    }
+  ]
+}

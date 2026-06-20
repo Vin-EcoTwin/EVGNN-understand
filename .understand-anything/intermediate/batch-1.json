@@ -1,0 +1,649 @@
+{
+  "batch": 1,
+  "language": "en",
+  "nodes": [
+    {
+      "id": "file:SAC/actionSAC.py",
+      "type": "file",
+      "name": "actionSAC.py",
+      "filePath": "SAC/actionSAC.py",
+      "summary": "Implements SAC agent with Graph Neural Network feature extraction for action selection and policy learning in EV charging optimization.",
+      "tags": ["reinforcement-learning", "SAC", "actor-critic", "policy-gradient", "graph-neural-network", "action-space"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 85,
+        "classes": 1,
+        "methods": 3,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/model.py",
+      "type": "file",
+      "name": "model.py",
+      "filePath": "SAC/model.py",
+      "summary": "Defines neural network architectures for SAC algorithm including ValueNetwork, QNetwork with GNN feature extractors, and Gaussian policy networks for continuous action control.",
+      "tags": ["neural-network", "SAC", "policy-network", "Q-network", "graph-neural-network", "feature-extraction"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 120,
+        "classes": 4,
+        "methods": 12,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/old_actionSAC.py",
+      "type": "file",
+      "name": "old_actionSAC.py",
+      "filePath": "SAC/old_actionSAC.py",
+      "summary": "Legacy implementation of SAC agent with GNN integration, replaced by updated actionSAC.py with improved architecture and training stability.",
+      "tags": ["reinforcement-learning", "SAC", "deprecated", "legacy-code", "graph-neural-network"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 92,
+        "classes": 1,
+        "methods": 3,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/old_model.py",
+      "type": "file",
+      "name": "old_model.py",
+      "filePath": "SAC/old_model.py",
+      "summary": "Legacy neural network models for SAC with GNN feature extraction, superseded by newer model.py with architectural improvements.",
+      "tags": ["neural-network", "SAC", "legacy-code", "deprecated", "graph-neural-network"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 145,
+        "classes": 5,
+        "methods": 15,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/sac.py",
+      "type": "file",
+      "name": "sac.py",
+      "filePath": "SAC/sac.py",
+      "summary": "Core SAC algorithm implementation with support for both standard and GNN-based feature extraction, handling actor-critic training with entropy regularization.",
+      "tags": ["reinforcement-learning", "SAC", "actor-critic", "algorithm", "training-loop", "graph-neural-network"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 175,
+        "classes": 1,
+        "methods": 5,
+        "imports": 9
+      }
+    },
+    {
+      "id": "file:SAC/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "SAC/utils.py",
+      "summary": "Utility functions for SAC training including soft parameter updates, hard parameter copies, and logarithmic probability calculations for Gaussian distributions.",
+      "tags": ["utility", "parameter-update", "optimization", "SAC"],
+      "complexity": "simple",
+      "language": "python",
+      "metrics": {
+        "lines": 65,
+        "classes": 0,
+        "methods": 4,
+        "imports": 2
+      }
+    },
+    {
+      "id": "file:TD3/TD3.py",
+      "type": "file",
+      "name": "TD3.py",
+      "filePath": "TD3/TD3.py",
+      "summary": "Baseline Twin Delayed DDPG (TD3) algorithm implementation with actor-critic architecture and delayed policy updates for improved training stability.",
+      "tags": ["reinforcement-learning", "TD3", "actor-critic", "off-policy", "baseline-algorithm", "deterministic-policy"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 158,
+        "classes": 3,
+        "methods": 8,
+        "imports": 7
+      }
+    },
+    {
+      "id": "file:TD3/TD3_ActionGNN.py",
+      "type": "file",
+      "name": "TD3_ActionGNN.py",
+      "filePath": "TD3/TD3_ActionGNN.py",
+      "summary": "Enhanced TD3 implementation integrating Graph Neural Networks for state representation learning and action generation on multi-node EV charging network graphs.",
+      "tags": ["reinforcement-learning", "TD3", "graph-neural-network", "GCN", "actor-critic", "action-generation"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 195,
+        "classes": 2,
+        "methods": 12,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:TD3/TD3_GNN.py",
+      "type": "file",
+      "name": "TD3_GNN.py",
+      "filePath": "TD3/TD3_GNN.py",
+      "summary": "Graph Neural Network feature extractors (GNN_Feature_Extractor and GNN_Residual_Feature_Extractor) for learning distributed representations from multi-node power network state graphs.",
+      "tags": ["graph-neural-network", "GCN", "feature-extraction", "embedding", "residual-connections", "pooling"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 205,
+        "classes": 2,
+        "methods": 4,
+        "imports": 9
+      }
+    },
+    {
+      "id": "file:TD3/old_TD3_ActionGNN.py",
+      "type": "file",
+      "name": "old_TD3_ActionGNN.py",
+      "filePath": "TD3/old_TD3_ActionGNN.py",
+      "summary": "Earlier iteration of TD3 with GNN integration, including Actor and Critic_GNN classes with multiple GCN layers for power network control.",
+      "tags": ["reinforcement-learning", "TD3", "graph-neural-network", "legacy-code", "actor-critic"],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 210,
+        "classes": 2,
+        "methods": 8,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:utils/replay_buffer.py",
+      "type": "file",
+      "name": "replay_buffer.py",
+      "filePath": "utils/replay_buffer.py",
+      "summary": "Replay buffer implementations for off-policy RL agents: standard ReplayBuffer for flat state spaces and GNN_ReplayBuffer for graph-structured state batching with edge indices.",
+      "tags": ["replay-buffer", "experience-storage", "graph-structured-data", "batch-sampling", "off-policy-learning"],
+      "complexity": "moderate",
+      "language": "python",
+      "metrics": {
+        "lines": 140,
+        "classes": 2,
+        "methods": 6,
+        "imports": 5
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST.yaml",
+      "type": "config",
+      "name": "PublicPST.yaml",
+      "filePath": "config_files/PublicPST.yaml",
+      "summary": "Base configuration for EV charging environment simulation with PublicPST network topology (unspecified scale), timescale 15 minutes, 112 simulation steps.",
+      "tags": ["configuration", "simulation", "environment", "PublicPST-network", "evsim"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100.yaml",
+      "type": "config",
+      "name": "PublicPST_100.yaml",
+      "filePath": "config_files/PublicPST_100.yaml",
+      "summary": "Configuration for EV charging simulation on PublicPST 100-node network, 15-minute timescale, random date selection enabled for generalization testing.",
+      "tags": ["configuration", "simulation", "PublicPST-100-nodes", "network-scale", "random-date"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g1.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g1.yaml",
+      "filePath": "config_files/PublicPST_100_g1.yaml",
+      "summary": "Generalization test configuration 1 for 100-node PublicPST network, validation variant with fixed date for consistent evaluation.",
+      "tags": ["configuration", "simulation", "PublicPST-100-nodes", "generalization-test", "variant-g1"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g2.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g2.yaml",
+      "filePath": "config_files/PublicPST_100_g2.yaml",
+      "summary": "Generalization test configuration 2 for 100-node PublicPST network, second validation variant for cross-scenario evaluation.",
+      "tags": ["configuration", "simulation", "PublicPST-100-nodes", "generalization-test", "variant-g2"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g3.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g3.yaml",
+      "filePath": "config_files/PublicPST_100_g3.yaml",
+      "summary": "Generalization test configuration 3 for 100-node PublicPST network, third validation variant for robust cross-condition testing.",
+      "tags": ["configuration", "simulation", "PublicPST-100-nodes", "generalization-test", "variant-g3"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500.yaml",
+      "type": "config",
+      "name": "PublicPST_500.yaml",
+      "filePath": "config_files/PublicPST_500.yaml",
+      "summary": "Configuration for large-scale EV charging simulation on PublicPST 500-node network, tests scalability and performance with larger power systems.",
+      "tags": ["configuration", "simulation", "PublicPST-500-nodes", "large-scale", "network-scale"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g1.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g1.yaml",
+      "filePath": "config_files/PublicPST_500_g1.yaml",
+      "summary": "Generalization test configuration 1 for 500-node PublicPST network, large-scale validation variant for scalability evaluation.",
+      "tags": ["configuration", "simulation", "PublicPST-500-nodes", "generalization-test", "large-scale", "variant-g1"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g2.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g2.yaml",
+      "filePath": "config_files/PublicPST_500_g2.yaml",
+      "summary": "Generalization test configuration 2 for 500-node PublicPST network, second large-scale validation variant.",
+      "tags": ["configuration", "simulation", "PublicPST-500-nodes", "generalization-test", "large-scale", "variant-g2"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g3.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g3.yaml",
+      "filePath": "config_files/PublicPST_500_g3.yaml",
+      "summary": "Generalization test configuration 3 for 500-node PublicPST network, third large-scale validation variant for robustness testing.",
+      "tags": ["configuration", "simulation", "PublicPST-500-nodes", "generalization-test", "large-scale", "variant-g3"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_1000.yaml",
+      "type": "config",
+      "name": "PublicPST_1000.yaml",
+      "filePath": "config_files/PublicPST_1000.yaml",
+      "summary": "Ultra-large scale configuration for 1000-node PublicPST network, extreme scalability test for GNN agent performance on massive power systems.",
+      "tags": ["configuration", "simulation", "PublicPST-1000-nodes", "ultra-large-scale", "scalability-test"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_GNN_example.yaml",
+      "type": "config",
+      "name": "PublicPST_GNN_example.yaml",
+      "filePath": "config_files/PublicPST_GNN_example.yaml",
+      "summary": "Example configuration file for GNN-based RL agent training on PublicPST network, serves as template for experimentation.",
+      "tags": ["configuration", "simulation", "example", "PublicPST-network", "GNN-agent"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_25.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "summary": "Small-scale V2G (Vehicle-to-Grid) configuration with 25-node network, profit maximization scenario including load balancing constraints.",
+      "tags": ["configuration", "simulation", "V2G", "vehicle-to-grid", "profit-maximization", "small-scale"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_100.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "summary": "Medium-scale V2G configuration with 100-node network, profit maximization with load balancing for bidirectional charging scenarios.",
+      "tags": ["configuration", "simulation", "V2G", "vehicle-to-grid", "profit-maximization", "medium-scale"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_500.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "summary": "Large-scale V2G configuration with 500-node network, complex profit maximization scenario with extensive load balancing across power grid.",
+      "tags": ["configuration", "simulation", "V2G", "vehicle-to-grid", "profit-maximization", "large-scale"],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:SAC/model.py",
+      "type": "imports",
+      "label": "GaussianPolicy_ActionGNN, Critic_GNN",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:SAC/model.py",
+      "type": "imports",
+      "label": "GaussianPolicy, QNetwork, DeterministicPolicy, GaussianPolicy_GNN_FX, QNetwork_GNN_FX",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/model.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/old_model.py",
+      "type": "imports",
+      "label": "GaussianPolicy_ActionGNN, Critic_GNN",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/old_model.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/old_TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "GNN_ReplayBuffer for experience storage",
+      "confidence": 0.9,
+      "crossBatch": true
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "ReplayBuffer for training",
+      "confidence": 0.9,
+      "crossBatch": true
+    },
+    {
+      "source": "file:TD3/TD3.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "ReplayBuffer for agent training",
+      "confidence": 0.9,
+      "crossBatch": true
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "GNN_ReplayBuffer for graph-structured states",
+      "confidence": 0.9,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_100.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "simulation parameters: 100-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_100.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "simulation parameters: 100-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_500.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "large-scale test: 500-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_500.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "large-scale test: 500-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_1000.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "ultra-large scale test: 1000-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/PublicPST_1000.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "ultra-large scale test: 1000-node network",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true
+    },
+    {
+      "source": "file:SAC/model.py",
+      "target": "file:SAC/sac.py",
+      "type": "called-by",
+      "label": "network models instantiated in SAC agent",
+      "confidence": 0.95,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/TD3_GNN.py",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "called-by",
+      "label": "GNN extractors used in Actor forward pass",
+      "confidence": 0.95,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/utils.py",
+      "target": "file:SAC/model.py",
+      "type": "called-by",
+      "label": "parameter updates applied to network models",
+      "confidence": 0.9,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/TD3.py",
+      "target": "file:SAC/sac.py",
+      "type": "similar-to",
+      "label": "both use actor-critic architecture with dual Q-networks",
+      "confidence": 0.7,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:SAC/actionSAC.py",
+      "type": "similar-to",
+      "label": "both integrate GNN with actor-critic RL algorithms",
+      "confidence": 0.75,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/actionSAC.py",
+      "type": "supersedes",
+      "label": "newer implementation with architectural improvements",
+      "confidence": 0.95,
+      "crossBatch": false
+    },
+    {
+      "source": "file:SAC/old_model.py",
+      "target": "file:SAC/model.py",
+      "type": "supersedes",
+      "label": "updated models with improved training stability",
+      "confidence": 0.95,
+      "crossBatch": false
+    },
+    {
+      "source": "file:TD3/old_TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "supersedes",
+      "label": "refined GNN integration and training loop",
+      "confidence": 0.95,
+      "crossBatch": false
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-06-20T00:00:00Z",
+    "projectName": "EV-GNN",
+    "projectDescription": "Electric Vehicle Graph Neural Network - RL agent training for EV charging optimization using Graph Neural Networks",
+    "rootPath": "/home/ursuswh/Vfluxion/EV-GNN",
+    "batch": "1/3",
+    "filesAnalyzed": 25,
+    "nodesCreated": 25,
+    "edgesCreated": 30,
+    "algorithmTypes": [
+      "SAC",
+      "TD3",
+      "Graph Neural Networks"
+    ],
+    "applicationDomain": [
+      "Reinforcement Learning",
+      "EV Charging Optimization",
+      "Power Systems",
+      "Graph Neural Networks"
+    ]
+  }
+}

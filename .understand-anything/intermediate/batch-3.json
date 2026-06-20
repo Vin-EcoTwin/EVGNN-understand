@@ -1,0 +1,508 @@
+{
+  "metadata": {
+    "project": "EV-GNN",
+    "batch": 3,
+    "totalBatches": 3,
+    "description": "Analysis scripts for EV-GNN results and documentation",
+    "timestamp": "2024-06-20",
+    "fileCount": 11,
+    "language": "English"
+  },
+  "nodes": [
+    {
+      "id": "file:Results_Analysis/gnn_fx_explain.py",
+      "type": "file",
+      "name": "gnn_fx_explain.py",
+      "filePath": "Results_Analysis/gnn_fx_explain.py",
+      "summary": "SHAP-based explainability analysis for GNN models using TreeSHAP and feature importance visualization across different RL algorithms and problem scales.",
+      "tags": [
+        "gnn-explanation",
+        "explainability",
+        "shap-analysis",
+        "model-interpretation",
+        "visualization"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "lineCount": 192,
+      "keyDependencies": [
+        "shap",
+        "networkx",
+        "TSNE",
+        "state_action_eda.AnalysisReplayBuffer",
+        "TD3.TD3_GNN",
+        "SAC.actionSAC",
+        "ev2gym"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/max_performance_results.py",
+      "type": "file",
+      "name": "max_performance_results.py",
+      "filePath": "Results_Analysis/max_performance_results.py",
+      "summary": "Visualizes maximum performance trajectories of all algorithms (SAC, TD3, GNN variants) across problem scales (25-1000 EVSEs) with comparative line plots.",
+      "tags": [
+        "performance-analysis",
+        "max-rewards",
+        "algorithm-comparison",
+        "visualization",
+        "scalability"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 168,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/mean_performance_comparison.py",
+      "type": "file",
+      "name": "mean_performance_comparison.py",
+      "filePath": "Results_Analysis/mean_performance_comparison.py",
+      "summary": "Analyzes mean performance with confidence intervals and variation bands for all algorithms across problem scales, showing convergence patterns and reward distributions.",
+      "tags": [
+        "performance-analysis",
+        "mean-rewards",
+        "statistical-analysis",
+        "visualization",
+        "convergence"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 195,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "file",
+      "name": "parse_evaluator_results.py",
+      "filePath": "Results_Analysis/parse_evaluator_results.py",
+      "summary": "Hub script for parsing evaluation results, calculating optimality gaps relative to optimal solutions, and generating LaTeX tables for performance metrics across algorithms.",
+      "tags": [
+        "result-parsing",
+        "data-processing",
+        "optimality-gap",
+        "metric-calculation",
+        "table-generation",
+        "hub-script"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 210,
+      "keyDependencies": [
+        "pandas"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/rewards_eda.py",
+      "type": "file",
+      "name": "rewards_eda.py",
+      "filePath": "Results_Analysis/rewards_eda.py",
+      "summary": "Exploratory data analysis for reward trajectories in PST scenarios, showing convergence, zoom-ins on initial training, and algorithm comparisons with error bounds.",
+      "tags": [
+        "reward-analysis",
+        "eda",
+        "pst-scenario",
+        "trajectory-analysis",
+        "convergence-study"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 187,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/sb3_reward_eda.py",
+      "type": "file",
+      "name": "sb3_reward_eda.py",
+      "filePath": "Results_Analysis/sb3_reward_eda.py",
+      "summary": "Analyzes stable-baselines3 algorithm optimization with optimality gap visualization using bar plots, error bounds, and algorithm performance comparison across scales.",
+      "tags": [
+        "reward-analysis",
+        "stable-baselines3",
+        "optimality-gap",
+        "algorithm-optimization",
+        "bar-plots"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 156,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/state_action_eda.py",
+      "type": "file",
+      "name": "state_action_eda.py",
+      "filePath": "Results_Analysis/state_action_eda.py",
+      "summary": "Defines AnalysisReplayBuffer class and provides visualization utilities for state-action space exploration including action histograms, t-SNE plots, and violin distributions.",
+      "tags": [
+        "state-action-analysis",
+        "replay-buffer",
+        "eda",
+        "dimensionality-reduction",
+        "visualization-utility"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 203,
+      "keyDependencies": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "sklearn.decomposition",
+        "sklearn.manifold"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/v2g_rewards_eda.py",
+      "type": "file",
+      "name": "v2g_rewards_eda.py",
+      "filePath": "Results_Analysis/v2g_rewards_eda.py",
+      "summary": "Exploratory analysis of V2G profit maximization reward trajectories showing convergence patterns, algorithm comparisons with zoom-in details for smaller scales.",
+      "tags": [
+        "v2g-scenario",
+        "reward-analysis",
+        "eda",
+        "profit-maximization",
+        "trajectory-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 171,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/v2g_stats_eda.py",
+      "type": "file",
+      "name": "v2g_stats_eda.py",
+      "filePath": "Results_Analysis/v2g_stats_eda.py",
+      "summary": "Statistical analysis of V2G algorithms comparing total profits, user satisfaction, transformer overloads, and time performance across baseline and RL approaches.",
+      "tags": [
+        "v2g-scenario",
+        "statistical-analysis",
+        "performance-metrics",
+        "box-plots",
+        "multi-objective-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 189,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project documentation covering EV-GNN architecture, scalability results, application domains (PST, V2G), and citation information for the published paper.",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "architecture",
+        "results-summary",
+        "paper-link"
+      ],
+      "complexity": "simple",
+      "language": "markdown",
+      "lineCount": 145
+    },
+    {
+      "id": "markup:requirements.txt",
+      "type": "file",
+      "name": "requirements.txt",
+      "filePath": "requirements.txt",
+      "summary": "Python package dependencies including ev2gym, wandb, PyTorch, stable-baselines3, and visualization/ML libraries needed for training and analysis.",
+      "tags": [
+        "dependencies",
+        "environment",
+        "requirements",
+        "package-management"
+      ],
+      "complexity": "simple",
+      "language": "text",
+      "lineCount": 22
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "file:Results_Analysis/state_action_eda.py",
+      "type": "imports",
+      "description": "Uses AnalysisReplayBuffer for GNN explainability data collection"
+    },
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Explainability analysis demonstrates GNN-FX concept described in README"
+    },
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "markup:requirements.txt",
+      "type": "uses",
+      "description": "Requires torch, networkx, scikit-learn, shap libraries"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis script for algorithm comparison and performance visualization"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Generates max performance plots shown in README results section"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn for data analysis and visualization"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis script for algorithm performance comparison"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Provides mean performance analysis supporting README results"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn for visualization"
+    },
+    {
+      "source": "file:Results_Analysis/parse_evaluator_results.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Hub script that other analysis scripts use to get processed evaluation data"
+    },
+    {
+      "source": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas for data processing"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for PST scenario reward trajectories"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Analyzes training dynamics supporting README scalability results"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for stable-baselines3 algorithm optimization"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Compares algorithm performance shown in README results"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn, numpy"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "target": "file:Results_Analysis/gnn_fx_explain.py",
+      "type": "related",
+      "description": "Utility module providing AnalysisReplayBuffer used by explainability analysis"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Provides state-action visualization utilities for understanding model behavior"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires numpy, pandas, matplotlib, seaborn, scikit-learn"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for V2G profit maximization scenarios"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Analyzes V2G application results shown in README"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for V2G statistics and multi-objective performance"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Compares V2G algorithm performance across profit, satisfaction, and grid metrics"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "type": "uses",
+      "target": "markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn, numpy"
+    },
+    {
+      "source": "document:README.md",
+      "target": "markup:requirements.txt",
+      "type": "documents",
+      "description": "README documents the dependencies and environment setup"
+    }
+  ],
+  "analysis": {
+    "resultsAnalysisDirectory": {
+      "description": "Collection of 9 complementary analysis scripts forming a specialized analysis pipeline",
+      "purpose": "Post-evaluation analysis of model performance across different algorithms, scenarios, and problem scales",
+      "scriptCategories": {
+        "performance-analysis": [
+          "max_performance_results.py",
+          "mean_performance_comparison.py",
+          "parse_evaluator_results.py",
+          "sb3_reward_eda.py"
+        ],
+        "reward-analysis": [
+          "rewards_eda.py",
+          "v2g_rewards_eda.py",
+          "v2g_stats_eda.py"
+        ],
+        "interpretability": [
+          "gnn_fx_explain.py",
+          "state_action_eda.py"
+        ]
+      },
+      "scenarios": [
+        "PST (Public Static Transformer)",
+        "V2G (Vehicle-to-Grid) Profit Maximization"
+      ],
+      "problemScales": [
+        25,
+        100,
+        500,
+        1000
+      ],
+      "algorithms": [
+        "SAC",
+        "TD3",
+        "SAC GNN-FX",
+        "TD3 GNN-FX",
+        "SAC EV-GNN",
+        "TD3 EV-GNN",
+        "Baseline Methods (AFAP, RR)"
+      ]
+    },
+    "dataFlow": {
+      "description": "Analysis pipeline showing how results flow from evaluation to specialized analysis",
+      "pipeline": [
+        "evaluator.py (produces results)",
+        "parse_evaluator_results.py (parses & calculates metrics)",
+        {
+          "performance": [
+            "max_performance_results.py",
+            "mean_performance_comparison.py",
+            "sb3_reward_eda.py"
+          ],
+          "rewards": [
+            "rewards_eda.py",
+            "v2g_rewards_eda.py",
+            "v2g_stats_eda.py"
+          ],
+          "interpretability": [
+            "state_action_eda.py",
+            "gnn_fx_explain.py"
+          ]
+        }
+      ]
+    },
+    "keyInsights": [
+      "Results_Analysis scripts are all interdependent siblings analyzing different aspects of evaluation output",
+      "parse_evaluator_results.py acts as a hub for other scripts, providing normalized metrics and optimality gaps",
+      "Analysis covers three orthogonal dimensions: performance metrics, reward trajectories, and model interpretability",
+      "V2G and PST scenarios are analyzed separately with scenario-specific EDA scripts",
+      "Scalability is tested across 4 problem scales (25, 100, 500, 1000 EVSEs)",
+      "GNN variants (GNN-FX and EV-GNN) are systematically compared against baseline RL algorithms"
+    ],
+    "dependencies": {
+      "core": [
+        "ev2gym==1.0.0 (environment simulation)",
+        "torch==2.2.2 (deep learning)",
+        "stable-baselines3[extra] (baseline algorithms)",
+        "pandas (data processing)",
+        "matplotlib (visualization)",
+        "seaborn (statistical visualization)"
+      ],
+      "optional": [
+        "wandb (experiment tracking)",
+        "tqdm (progress bars)",
+        "icecream (debugging)",
+        "sb3-contrib (additional baselines)",
+        "shap (model explainability)",
+        "scikit-learn (machine learning utilities)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "id": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "file",
+      "name": "action_wrapper.py",
+      "filePath": "EV-GNN/utils/action_wrapper.py",
+      "summary": "Implements action space wrapper classes for gymnasium environments. Provides BinaryAction and ThreeStep_Action wrappers that transform continuous action outputs into discrete or modified action spaces for EV charging control.",
+      "tags": [
+        "action-space",
+        "wrapper",
+        "gymnasium",
+        "discrete-actions",
+        "utilities"
+      ],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/utils/state.py",
+      "type": "file",
+      "name": "state.py",
+      "filePath": "EV-GNN/utils/state.py",
+      "summary": "Defines state representation functions for RL agents, including GNN-based state representations. Contains PublicPST_GNN and V2G_ProfitMax_with_Loads_GNN functions that construct PyTorch Geometric graph objects from environment state for GNN processing.",
+      "tags": [
+        "state-representation",
+        "graph-neural-networks",
+        "pytorch-geometric",
+        "gnn",
+        "utilities",
+        "feature-extraction"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/train_RL_GNN.py",
+      "type": "file",
+      "name": "train_RL_GNN.py",
+      "filePath": "EV-GNN/train_RL_GNN.py",
+      "summary": "Main entry point for training GNN-based reinforcement learning agents (TD3_GNN, TD3_ActionGNN, SAC, SAC_ActionGNN). Orchestrates environment setup, model initialization, training loops with W&B logging, and evaluation using GNN state representations.",
+      "tags": [
+        "training",
+        "gnn",
+        "reinforcement-learning",
+        "td3",
+        "sac",
+        "main-entry-point",
+        "wandb-integration"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/train_baselines.py",
+      "type": "file",
+      "name": "train_baselines.py",
+      "filePath": "EV-GNN/train_baselines.py",
+      "summary": "Training script for baseline reinforcement learning algorithms without GNN using stable-baselines3 library. Supports multiple algorithms (PPO, A2C, DDPG, SAC, TD3, DQN, etc.) with optional discrete action spaces and action masking.",
+      "tags": [
+        "training",
+        "baselines",
+        "stable-baselines3",
+        "reinforcement-learning",
+        "algorithm-comparison",
+        "discrete-actions"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/evaluator.py",
+      "type": "file",
+      "name": "evaluator.py",
+      "filePath": "EV-GNN/evaluator.py",
+      "summary": "Evaluation script for trained agents across multiple algorithms and baseline strategies. Compares RL models (GNN-based and standard) against heuristic and MPC baselines on key performance metrics like rewards, tracking error, and energy metrics.",
+      "tags": [
+        "evaluation",
+        "model-comparison",
+        "baselines",
+        "visualization",
+        "results-analysis",
+        "metrics"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "type": "file",
+      "name": "component_analysis.py",
+      "filePath": "EV-GNN/Results_Analysis/component_analysis.py",
+      "summary": "Analysis script for decomposing and examining individual components of model performance. Analyzes specific aspects of trained agents' decisions and outcomes on component-level metrics.",
+      "tags": [
+        "analysis",
+        "results-analysis",
+        "visualization",
+        "component-analysis",
+        "performance-metrics"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "file",
+      "name": "discrete_eda.py",
+      "filePath": "EV-GNN/Results_Analysis/discrete_eda.py",
+      "summary": "Exploratory data analysis script comparing performance metrics between models with discrete and continuous action spaces. Generates visualizations of optimality gaps and performance comparisons across different algorithms.",
+      "tags": [
+        "analysis",
+        "eda",
+        "discrete-actions",
+        "visualization",
+        "performance-comparison",
+        "results-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "type": "file",
+      "name": "generalization_eda.py",
+      "filePath": "EV-GNN/Results_Analysis/generalization_eda.py",
+      "summary": "Analysis script for evaluating model generalization across different environment configurations and scenarios. Computes optimality gaps and visualization of algorithms' performance when trained in one scenario and tested in generalized settings.",
+      "tags": [
+        "analysis",
+        "eda",
+        "generalization",
+        "visualization",
+        "transfer-learning",
+        "results-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/utils/state.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN, and other state functions",
+        "objects": [
+          "PublicPST_GNN",
+          "V2G_ProfitMax_with_Loads_GNN",
+          "PublicPST_GNN_no_position_encoding",
+          "PublicPST_GNN_full_graph"
+        ]
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports action wrapper classes for discrete/modified action spaces",
+        "objects": [
+          "BinaryAction",
+          "ThreeStep_Action"
+        ]
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports action wrapper classes and utility functions for discrete action spaces",
+        "objects": [
+          "ThreeStep_Action_DiscreteActionSpace",
+          "mask_fn",
+          "Fully_Discrete"
+        ]
+      }
+    },
+    {
+      "source": "file:EV-GNN/evaluator.py",
+      "target": "file:EV-GNN/utils/state.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports GNN state functions for model evaluation",
+        "objects": [
+          "PublicPST_GNN",
+          "V2G_ProfitMax_with_Loads_GNN"
+        ]
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script produces models that are evaluated by evaluator.py",
+        "relationship": "produces-and-tests"
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Baseline training script produces models that are evaluated in evaluator.py",
+        "relationship": "produces-and-tests"
+      }
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script processes and visualizes results from evaluator.py focusing on discrete action variants",
+        "relationship": "post-processes"
+      }
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script processes and visualizes generalization results from evaluator.py",
+        "relationship": "post-processes"
+      }
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script decomposes evaluation results into component-level metrics",
+        "relationship": "post-processes"
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script output is analyzed by discrete_eda.py for discrete action comparison",
+        "relationship": "produces-inputs-for"
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script output is analyzed by generalization_eda.py for transfer learning analysis",
+        "relationship": "produces-inputs-for"
+      }
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Baseline training output is analyzed for discrete action space comparison",
+        "relationship": "produces-inputs-for"
+      }
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "target": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both scripts analyze training results with complementary perspectives",
+        "relationship": "sibling-analysis"
+      }
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both scripts provide exploratory analysis of different aspects of model performance",
+        "relationship": "sibling-analysis"
+      }
+    },
+    {
+      "source": "file:EV-GNN/utils/state.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both utilities support the RL training pipeline with state and action abstractions",
+        "relationship": "complementary-utilities"
+      }
+    }
+  ]
+}

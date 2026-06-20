@@ -1,0 +1,1547 @@
+{
+  "nodes": [
+    {
+      "id": "file:SAC/actionSAC.py",
+      "type": "file",
+      "name": "actionSAC.py",
+      "filePath": "SAC/actionSAC.py",
+      "summary": "Implements SAC agent with Graph Neural Network feature extraction for action selection and policy learning in EV charging optimization.",
+      "tags": [
+        "reinforcement-learning",
+        "SAC",
+        "actor-critic",
+        "policy-gradient",
+        "graph-neural-network",
+        "action-space"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 85,
+        "classes": 1,
+        "methods": 3,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/model.py",
+      "type": "file",
+      "name": "model.py",
+      "filePath": "SAC/model.py",
+      "summary": "Defines neural network architectures for SAC algorithm including ValueNetwork, QNetwork with GNN feature extractors, and Gaussian policy networks for continuous action control.",
+      "tags": [
+        "neural-network",
+        "SAC",
+        "policy-network",
+        "Q-network",
+        "graph-neural-network",
+        "feature-extraction"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 120,
+        "classes": 4,
+        "methods": 12,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/old_actionSAC.py",
+      "type": "file",
+      "name": "old_actionSAC.py",
+      "filePath": "SAC/old_actionSAC.py",
+      "summary": "Legacy implementation of SAC agent with GNN integration, replaced by updated actionSAC.py with improved architecture and training stability.",
+      "tags": [
+        "reinforcement-learning",
+        "SAC",
+        "deprecated",
+        "legacy-code",
+        "graph-neural-network"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 92,
+        "classes": 1,
+        "methods": 3,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/old_model.py",
+      "type": "file",
+      "name": "old_model.py",
+      "filePath": "SAC/old_model.py",
+      "summary": "Legacy neural network models for SAC with GNN feature extraction, superseded by newer model.py with architectural improvements.",
+      "tags": [
+        "neural-network",
+        "SAC",
+        "legacy-code",
+        "deprecated",
+        "graph-neural-network"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 145,
+        "classes": 5,
+        "methods": 15,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:SAC/sac.py",
+      "type": "file",
+      "name": "sac.py",
+      "filePath": "SAC/sac.py",
+      "summary": "Core SAC algorithm implementation with support for both standard and GNN-based feature extraction, handling actor-critic training with entropy regularization.",
+      "tags": [
+        "reinforcement-learning",
+        "SAC",
+        "actor-critic",
+        "algorithm",
+        "training-loop",
+        "graph-neural-network"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 175,
+        "classes": 1,
+        "methods": 5,
+        "imports": 9
+      }
+    },
+    {
+      "id": "file:SAC/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "SAC/utils.py",
+      "summary": "Utility functions for SAC training including soft parameter updates, hard parameter copies, and logarithmic probability calculations for Gaussian distributions.",
+      "tags": [
+        "utility",
+        "parameter-update",
+        "optimization",
+        "SAC"
+      ],
+      "complexity": "simple",
+      "language": "python",
+      "metrics": {
+        "lines": 65,
+        "classes": 0,
+        "methods": 4,
+        "imports": 2
+      }
+    },
+    {
+      "id": "file:TD3/TD3.py",
+      "type": "file",
+      "name": "TD3.py",
+      "filePath": "TD3/TD3.py",
+      "summary": "Baseline Twin Delayed DDPG (TD3) algorithm implementation with actor-critic architecture and delayed policy updates for improved training stability.",
+      "tags": [
+        "reinforcement-learning",
+        "TD3",
+        "actor-critic",
+        "off-policy",
+        "baseline-algorithm",
+        "deterministic-policy"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 158,
+        "classes": 3,
+        "methods": 8,
+        "imports": 7
+      }
+    },
+    {
+      "id": "file:TD3/TD3_ActionGNN.py",
+      "type": "file",
+      "name": "TD3_ActionGNN.py",
+      "filePath": "TD3/TD3_ActionGNN.py",
+      "summary": "Enhanced TD3 implementation integrating Graph Neural Networks for state representation learning and action generation on multi-node EV charging network graphs.",
+      "tags": [
+        "reinforcement-learning",
+        "TD3",
+        "graph-neural-network",
+        "GCN",
+        "actor-critic",
+        "action-generation"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 195,
+        "classes": 2,
+        "methods": 12,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:TD3/TD3_GNN.py",
+      "type": "file",
+      "name": "TD3_GNN.py",
+      "filePath": "TD3/TD3_GNN.py",
+      "summary": "Graph Neural Network feature extractors (GNN_Feature_Extractor and GNN_Residual_Feature_Extractor) for learning distributed representations from multi-node power network state graphs.",
+      "tags": [
+        "graph-neural-network",
+        "GCN",
+        "feature-extraction",
+        "embedding",
+        "residual-connections",
+        "pooling"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 205,
+        "classes": 2,
+        "methods": 4,
+        "imports": 9
+      }
+    },
+    {
+      "id": "file:TD3/old_TD3_ActionGNN.py",
+      "type": "file",
+      "name": "old_TD3_ActionGNN.py",
+      "filePath": "TD3/old_TD3_ActionGNN.py",
+      "summary": "Earlier iteration of TD3 with GNN integration, including Actor and Critic_GNN classes with multiple GCN layers for power network control.",
+      "tags": [
+        "reinforcement-learning",
+        "TD3",
+        "graph-neural-network",
+        "legacy-code",
+        "actor-critic"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "metrics": {
+        "lines": 210,
+        "classes": 2,
+        "methods": 8,
+        "imports": 8
+      }
+    },
+    {
+      "id": "file:utils/replay_buffer.py",
+      "type": "file",
+      "name": "replay_buffer.py",
+      "filePath": "utils/replay_buffer.py",
+      "summary": "Replay buffer implementations for off-policy RL agents: standard ReplayBuffer for flat state spaces and GNN_ReplayBuffer for graph-structured state batching with edge indices.",
+      "tags": [
+        "replay-buffer",
+        "experience-storage",
+        "graph-structured-data",
+        "batch-sampling",
+        "off-policy-learning"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "metrics": {
+        "lines": 140,
+        "classes": 2,
+        "methods": 6,
+        "imports": 5
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST.yaml",
+      "type": "config",
+      "name": "PublicPST.yaml",
+      "filePath": "config_files/PublicPST.yaml",
+      "summary": "Base configuration for EV charging environment simulation with PublicPST network topology (unspecified scale), timescale 15 minutes, 112 simulation steps.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "environment",
+        "PublicPST-network",
+        "evsim"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100.yaml",
+      "type": "config",
+      "name": "PublicPST_100.yaml",
+      "filePath": "config_files/PublicPST_100.yaml",
+      "summary": "Configuration for EV charging simulation on PublicPST 100-node network, 15-minute timescale, random date selection enabled for generalization testing.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-100-nodes",
+        "network-scale",
+        "random-date"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g1.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g1.yaml",
+      "filePath": "config_files/PublicPST_100_g1.yaml",
+      "summary": "Generalization test configuration 1 for 100-node PublicPST network, validation variant with fixed date for consistent evaluation.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-100-nodes",
+        "generalization-test",
+        "variant-g1"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g2.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g2.yaml",
+      "filePath": "config_files/PublicPST_100_g2.yaml",
+      "summary": "Generalization test configuration 2 for 100-node PublicPST network, second validation variant for cross-scenario evaluation.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-100-nodes",
+        "generalization-test",
+        "variant-g2"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_100_g3.yaml",
+      "type": "config",
+      "name": "PublicPST_100_g3.yaml",
+      "filePath": "config_files/PublicPST_100_g3.yaml",
+      "summary": "Generalization test configuration 3 for 100-node PublicPST network, third validation variant for robust cross-condition testing.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-100-nodes",
+        "generalization-test",
+        "variant-g3"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500.yaml",
+      "type": "config",
+      "name": "PublicPST_500.yaml",
+      "filePath": "config_files/PublicPST_500.yaml",
+      "summary": "Configuration for large-scale EV charging simulation on PublicPST 500-node network, tests scalability and performance with larger power systems.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-500-nodes",
+        "large-scale",
+        "network-scale"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g1.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g1.yaml",
+      "filePath": "config_files/PublicPST_500_g1.yaml",
+      "summary": "Generalization test configuration 1 for 500-node PublicPST network, large-scale validation variant for scalability evaluation.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-500-nodes",
+        "generalization-test",
+        "large-scale",
+        "variant-g1"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g2.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g2.yaml",
+      "filePath": "config_files/PublicPST_500_g2.yaml",
+      "summary": "Generalization test configuration 2 for 500-node PublicPST network, second large-scale validation variant.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-500-nodes",
+        "generalization-test",
+        "large-scale",
+        "variant-g2"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_500_g3.yaml",
+      "type": "config",
+      "name": "PublicPST_500_g3.yaml",
+      "filePath": "config_files/PublicPST_500_g3.yaml",
+      "summary": "Generalization test configuration 3 for 500-node PublicPST network, third large-scale validation variant for robustness testing.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-500-nodes",
+        "generalization-test",
+        "large-scale",
+        "variant-g3"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_1000.yaml",
+      "type": "config",
+      "name": "PublicPST_1000.yaml",
+      "filePath": "config_files/PublicPST_1000.yaml",
+      "summary": "Ultra-large scale configuration for 1000-node PublicPST network, extreme scalability test for GNN agent performance on massive power systems.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "PublicPST-1000-nodes",
+        "ultra-large-scale",
+        "scalability-test"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/PublicPST_GNN_example.yaml",
+      "type": "config",
+      "name": "PublicPST_GNN_example.yaml",
+      "filePath": "config_files/PublicPST_GNN_example.yaml",
+      "summary": "Example configuration file for GNN-based RL agent training on PublicPST network, serves as template for experimentation.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "example",
+        "PublicPST-network",
+        "GNN-agent"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_25.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "summary": "Small-scale V2G (Vehicle-to-Grid) configuration with 25-node network, profit maximization scenario including load balancing constraints.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "V2G",
+        "vehicle-to-grid",
+        "profit-maximization",
+        "small-scale"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_100.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "summary": "Medium-scale V2G configuration with 100-node network, profit maximization with load balancing for bidirectional charging scenarios.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "V2G",
+        "vehicle-to-grid",
+        "profit-maximization",
+        "medium-scale"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "config:config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "type": "config",
+      "name": "V2G_ProfixMaxWithLoads_500.yaml",
+      "filePath": "config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "summary": "Large-scale V2G configuration with 500-node network, complex profit maximization scenario with extensive load balancing across power grid.",
+      "tags": [
+        "configuration",
+        "simulation",
+        "V2G",
+        "vehicle-to-grid",
+        "profit-maximization",
+        "large-scale"
+      ],
+      "complexity": "simple",
+      "language": "yaml",
+      "metrics": {
+        "lines": 18,
+        "keys": 8
+      }
+    },
+    {
+      "id": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "file",
+      "name": "action_wrapper.py",
+      "filePath": "EV-GNN/utils/action_wrapper.py",
+      "summary": "Implements action space wrapper classes for gymnasium environments. Provides BinaryAction and ThreeStep_Action wrappers that transform continuous action outputs into discrete or modified action spaces for EV charging control.",
+      "tags": [
+        "action-space",
+        "wrapper",
+        "gymnasium",
+        "discrete-actions",
+        "utilities"
+      ],
+      "complexity": "simple",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/utils/state.py",
+      "type": "file",
+      "name": "state.py",
+      "filePath": "EV-GNN/utils/state.py",
+      "summary": "Defines state representation functions for RL agents, including GNN-based state representations. Contains PublicPST_GNN and V2G_ProfitMax_with_Loads_GNN functions that construct PyTorch Geometric graph objects from environment state for GNN processing.",
+      "tags": [
+        "state-representation",
+        "graph-neural-networks",
+        "pytorch-geometric",
+        "gnn",
+        "utilities",
+        "feature-extraction"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/train_RL_GNN.py",
+      "type": "file",
+      "name": "train_RL_GNN.py",
+      "filePath": "EV-GNN/train_RL_GNN.py",
+      "summary": "Main entry point for training GNN-based reinforcement learning agents (TD3_GNN, TD3_ActionGNN, SAC, SAC_ActionGNN). Orchestrates environment setup, model initialization, training loops with W&B logging, and evaluation using GNN state representations.",
+      "tags": [
+        "training",
+        "gnn",
+        "reinforcement-learning",
+        "td3",
+        "sac",
+        "main-entry-point",
+        "wandb-integration"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/train_baselines.py",
+      "type": "file",
+      "name": "train_baselines.py",
+      "filePath": "EV-GNN/train_baselines.py",
+      "summary": "Training script for baseline reinforcement learning algorithms without GNN using stable-baselines3 library. Supports multiple algorithms (PPO, A2C, DDPG, SAC, TD3, DQN, etc.) with optional discrete action spaces and action masking.",
+      "tags": [
+        "training",
+        "baselines",
+        "stable-baselines3",
+        "reinforcement-learning",
+        "algorithm-comparison",
+        "discrete-actions"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/evaluator.py",
+      "type": "file",
+      "name": "evaluator.py",
+      "filePath": "EV-GNN/evaluator.py",
+      "summary": "Evaluation script for trained agents across multiple algorithms and baseline strategies. Compares RL models (GNN-based and standard) against heuristic and MPC baselines on key performance metrics like rewards, tracking error, and energy metrics.",
+      "tags": [
+        "evaluation",
+        "model-comparison",
+        "baselines",
+        "visualization",
+        "results-analysis",
+        "metrics"
+      ],
+      "complexity": "complex",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "type": "file",
+      "name": "component_analysis.py",
+      "filePath": "EV-GNN/Results_Analysis/component_analysis.py",
+      "summary": "Analysis script for decomposing and examining individual components of model performance. Analyzes specific aspects of trained agents' decisions and outcomes on component-level metrics.",
+      "tags": [
+        "analysis",
+        "results-analysis",
+        "visualization",
+        "component-analysis",
+        "performance-metrics"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "file",
+      "name": "discrete_eda.py",
+      "filePath": "EV-GNN/Results_Analysis/discrete_eda.py",
+      "summary": "Exploratory data analysis script comparing performance metrics between models with discrete and continuous action spaces. Generates visualizations of optimality gaps and performance comparisons across different algorithms.",
+      "tags": [
+        "analysis",
+        "eda",
+        "discrete-actions",
+        "visualization",
+        "performance-comparison",
+        "results-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "type": "file",
+      "name": "generalization_eda.py",
+      "filePath": "EV-GNN/Results_Analysis/generalization_eda.py",
+      "summary": "Analysis script for evaluating model generalization across different environment configurations and scenarios. Computes optimality gaps and visualization of algorithms' performance when trained in one scenario and tested in generalized settings.",
+      "tags": [
+        "analysis",
+        "eda",
+        "generalization",
+        "visualization",
+        "transfer-learning",
+        "results-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python"
+    },
+    {
+      "id": "file:Results_Analysis/gnn_fx_explain.py",
+      "type": "file",
+      "name": "gnn_fx_explain.py",
+      "filePath": "Results_Analysis/gnn_fx_explain.py",
+      "summary": "SHAP-based explainability analysis for GNN models using TreeSHAP and feature importance visualization across different RL algorithms and problem scales.",
+      "tags": [
+        "gnn-explanation",
+        "explainability",
+        "shap-analysis",
+        "model-interpretation",
+        "visualization"
+      ],
+      "complexity": "complex",
+      "language": "python",
+      "lineCount": 192,
+      "keyDependencies": [
+        "shap",
+        "networkx",
+        "TSNE",
+        "state_action_eda.AnalysisReplayBuffer",
+        "TD3.TD3_GNN",
+        "SAC.actionSAC",
+        "ev2gym"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/max_performance_results.py",
+      "type": "file",
+      "name": "max_performance_results.py",
+      "filePath": "Results_Analysis/max_performance_results.py",
+      "summary": "Visualizes maximum performance trajectories of all algorithms (SAC, TD3, GNN variants) across problem scales (25-1000 EVSEs) with comparative line plots.",
+      "tags": [
+        "performance-analysis",
+        "max-rewards",
+        "algorithm-comparison",
+        "visualization",
+        "scalability"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 168,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/mean_performance_comparison.py",
+      "type": "file",
+      "name": "mean_performance_comparison.py",
+      "filePath": "Results_Analysis/mean_performance_comparison.py",
+      "summary": "Analyzes mean performance with confidence intervals and variation bands for all algorithms across problem scales, showing convergence patterns and reward distributions.",
+      "tags": [
+        "performance-analysis",
+        "mean-rewards",
+        "statistical-analysis",
+        "visualization",
+        "convergence"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 195,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "file",
+      "name": "parse_evaluator_results.py",
+      "filePath": "Results_Analysis/parse_evaluator_results.py",
+      "summary": "Hub script for parsing evaluation results, calculating optimality gaps relative to optimal solutions, and generating LaTeX tables for performance metrics across algorithms.",
+      "tags": [
+        "result-parsing",
+        "data-processing",
+        "optimality-gap",
+        "metric-calculation",
+        "table-generation",
+        "hub-script"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 210,
+      "keyDependencies": [
+        "pandas"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/rewards_eda.py",
+      "type": "file",
+      "name": "rewards_eda.py",
+      "filePath": "Results_Analysis/rewards_eda.py",
+      "summary": "Exploratory data analysis for reward trajectories in PST scenarios, showing convergence, zoom-ins on initial training, and algorithm comparisons with error bounds.",
+      "tags": [
+        "reward-analysis",
+        "eda",
+        "pst-scenario",
+        "trajectory-analysis",
+        "convergence-study"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 187,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/sb3_reward_eda.py",
+      "type": "file",
+      "name": "sb3_reward_eda.py",
+      "filePath": "Results_Analysis/sb3_reward_eda.py",
+      "summary": "Analyzes stable-baselines3 algorithm optimization with optimality gap visualization using bar plots, error bounds, and algorithm performance comparison across scales.",
+      "tags": [
+        "reward-analysis",
+        "stable-baselines3",
+        "optimality-gap",
+        "algorithm-optimization",
+        "bar-plots"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 156,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/state_action_eda.py",
+      "type": "file",
+      "name": "state_action_eda.py",
+      "filePath": "Results_Analysis/state_action_eda.py",
+      "summary": "Defines AnalysisReplayBuffer class and provides visualization utilities for state-action space exploration including action histograms, t-SNE plots, and violin distributions.",
+      "tags": [
+        "state-action-analysis",
+        "replay-buffer",
+        "eda",
+        "dimensionality-reduction",
+        "visualization-utility"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 203,
+      "keyDependencies": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "sklearn.decomposition",
+        "sklearn.manifold"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/v2g_rewards_eda.py",
+      "type": "file",
+      "name": "v2g_rewards_eda.py",
+      "filePath": "Results_Analysis/v2g_rewards_eda.py",
+      "summary": "Exploratory analysis of V2G profit maximization reward trajectories showing convergence patterns, algorithm comparisons with zoom-in details for smaller scales.",
+      "tags": [
+        "v2g-scenario",
+        "reward-analysis",
+        "eda",
+        "profit-maximization",
+        "trajectory-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 171,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn"
+      ]
+    },
+    {
+      "id": "file:Results_Analysis/v2g_stats_eda.py",
+      "type": "file",
+      "name": "v2g_stats_eda.py",
+      "filePath": "Results_Analysis/v2g_stats_eda.py",
+      "summary": "Statistical analysis of V2G algorithms comparing total profits, user satisfaction, transformer overloads, and time performance across baseline and RL approaches.",
+      "tags": [
+        "v2g-scenario",
+        "statistical-analysis",
+        "performance-metrics",
+        "box-plots",
+        "multi-objective-analysis"
+      ],
+      "complexity": "moderate",
+      "language": "python",
+      "lineCount": 189,
+      "keyDependencies": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "numpy"
+      ]
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project documentation covering EV-GNN architecture, scalability results, application domains (PST, V2G), and citation information for the published paper.",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "architecture",
+        "results-summary",
+        "paper-link"
+      ],
+      "complexity": "simple",
+      "language": "markdown",
+      "lineCount": 145
+    },
+    {
+      "id": "file:markup:requirements.txt",
+      "type": "file",
+      "name": "requirements.txt",
+      "filePath": "requirements.txt",
+      "summary": "Python package dependencies including ev2gym, wandb, PyTorch, stable-baselines3, and visualization/ML libraries needed for training and analysis.",
+      "tags": [
+        "dependencies",
+        "environment",
+        "requirements",
+        "package-management"
+      ],
+      "complexity": "simple",
+      "language": "text",
+      "lineCount": 22
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:SAC/model.py",
+      "type": "imports",
+      "label": "GaussianPolicy_ActionGNN, Critic_GNN",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:SAC/model.py",
+      "type": "imports",
+      "label": "GaussianPolicy, QNetwork, DeterministicPolicy, GaussianPolicy_GNN_FX, QNetwork_GNN_FX",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/model.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/utils.py",
+      "type": "imports",
+      "label": "soft_update, hard_update",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/old_model.py",
+      "type": "imports",
+      "label": "GaussianPolicy_ActionGNN, Critic_GNN",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/old_model.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/old_TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_GNN.py",
+      "type": "imports",
+      "label": "GNN_Feature_Extractor",
+      "confidence": 1.0,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/actionSAC.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "GNN_ReplayBuffer for experience storage",
+      "confidence": 0.9,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/sac.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "ReplayBuffer for training",
+      "confidence": 0.9,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "ReplayBuffer for agent training",
+      "confidence": 0.9,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:utils/replay_buffer.py",
+      "type": "depends-on",
+      "label": "GNN_ReplayBuffer for graph-structured states",
+      "confidence": 0.9,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_100.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "simulation parameters: 100-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_100.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "simulation parameters: 100-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_500.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "large-scale test: 500-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_500.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "large-scale test: 500-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_1000.yaml",
+      "target": "file:SAC/actionSAC.py",
+      "type": "configures",
+      "label": "ultra-large scale test: 1000-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/PublicPST_1000.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "ultra-large scale test: 1000-node network",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_25.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_100.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "config:config_files/V2G_ProfixMaxWithLoads_500.yaml",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "configures",
+      "label": "V2G scenario: profit optimization with load balancing",
+      "confidence": 0.8,
+      "crossBatch": true,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/model.py",
+      "target": "file:SAC/sac.py",
+      "type": "called-by",
+      "label": "network models instantiated in SAC agent",
+      "confidence": 0.95,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3_GNN.py",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "called-by",
+      "label": "GNN extractors used in Actor forward pass",
+      "confidence": 0.95,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/utils.py",
+      "target": "file:SAC/model.py",
+      "type": "called-by",
+      "label": "parameter updates applied to network models",
+      "confidence": 0.9,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3.py",
+      "target": "file:SAC/sac.py",
+      "type": "similar-to",
+      "label": "both use actor-critic architecture with dual Q-networks",
+      "confidence": 0.7,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/TD3_ActionGNN.py",
+      "target": "file:SAC/actionSAC.py",
+      "type": "similar-to",
+      "label": "both integrate GNN with actor-critic RL algorithms",
+      "confidence": 0.75,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/old_actionSAC.py",
+      "target": "file:SAC/actionSAC.py",
+      "type": "supersedes",
+      "label": "newer implementation with architectural improvements",
+      "confidence": 0.95,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:SAC/old_model.py",
+      "target": "file:SAC/model.py",
+      "type": "supersedes",
+      "label": "updated models with improved training stability",
+      "confidence": 0.95,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:TD3/old_TD3_ActionGNN.py",
+      "target": "file:TD3/TD3_ActionGNN.py",
+      "type": "supersedes",
+      "label": "refined GNN integration and training loop",
+      "confidence": 0.95,
+      "crossBatch": false,
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/utils/state.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN, and other state functions",
+        "objects": [
+          "PublicPST_GNN",
+          "V2G_ProfitMax_with_Loads_GNN",
+          "PublicPST_GNN_no_position_encoding",
+          "PublicPST_GNN_full_graph"
+        ]
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports action wrapper classes for discrete/modified action spaces",
+        "objects": [
+          "BinaryAction",
+          "ThreeStep_Action"
+        ]
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports action wrapper classes and utility functions for discrete action spaces",
+        "objects": [
+          "ThreeStep_Action_DiscreteActionSpace",
+          "mask_fn",
+          "Fully_Discrete"
+        ]
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/evaluator.py",
+      "target": "file:EV-GNN/utils/state.py",
+      "type": "imports",
+      "metadata": {
+        "description": "Imports GNN state functions for model evaluation",
+        "objects": [
+          "PublicPST_GNN",
+          "V2G_ProfitMax_with_Loads_GNN"
+        ]
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script produces models that are evaluated by evaluator.py",
+        "relationship": "produces-and-tests"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Baseline training script produces models that are evaluated in evaluator.py",
+        "relationship": "produces-and-tests"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script processes and visualizes results from evaluator.py focusing on discrete action variants",
+        "relationship": "post-processes"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script processes and visualizes generalization results from evaluator.py",
+        "relationship": "post-processes"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "target": "file:EV-GNN/evaluator.py",
+      "type": "related",
+      "metadata": {
+        "description": "Analysis script decomposes evaluation results into component-level metrics",
+        "relationship": "post-processes"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script output is analyzed by discrete_eda.py for discrete action comparison",
+        "relationship": "produces-inputs-for"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_RL_GNN.py",
+      "target": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Training script output is analyzed by generalization_eda.py for transfer learning analysis",
+        "relationship": "produces-inputs-for"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/train_baselines.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Baseline training output is analyzed for discrete action space comparison",
+        "relationship": "produces-inputs-for"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "target": "file:EV-GNN/Results_Analysis/component_analysis.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both scripts analyze training results with complementary perspectives",
+        "relationship": "sibling-analysis"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/Results_Analysis/generalization_eda.py",
+      "target": "file:EV-GNN/Results_Analysis/discrete_eda.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both scripts provide exploratory analysis of different aspects of model performance",
+        "relationship": "sibling-analysis"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:EV-GNN/utils/state.py",
+      "target": "file:EV-GNN/utils/action_wrapper.py",
+      "type": "related",
+      "metadata": {
+        "description": "Both utilities support the RL training pipeline with state and action abstractions",
+        "relationship": "complementary-utilities"
+      },
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "file:Results_Analysis/state_action_eda.py",
+      "type": "imports",
+      "description": "Uses AnalysisReplayBuffer for GNN explainability data collection",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Explainability analysis demonstrates GNN-FX concept described in README",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/gnn_fx_explain.py",
+      "target": "file:markup:requirements.txt",
+      "type": "uses",
+      "description": "Requires torch, networkx, scikit-learn, shap libraries",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis script for algorithm comparison and performance visualization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Generates max performance plots shown in README results section",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/max_performance_results.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn for data analysis and visualization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis script for algorithm performance comparison",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Provides mean performance analysis supporting README results",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/mean_performance_comparison.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn for visualization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/parse_evaluator_results.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Hub script that other analysis scripts use to get processed evaluation data",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas for data processing",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for PST scenario reward trajectories",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Analyzes training dynamics supporting README scalability results",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/rewards_eda.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for stable-baselines3 algorithm optimization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Compares algorithm performance shown in README results",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/sb3_reward_eda.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn, numpy",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "target": "file:Results_Analysis/gnn_fx_explain.py",
+      "type": "related",
+      "description": "Utility module providing AnalysisReplayBuffer used by explainability analysis",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Provides state-action visualization utilities for understanding model behavior",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/state_action_eda.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires numpy, pandas, matplotlib, seaborn, scikit-learn",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for V2G profit maximization scenarios",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Analyzes V2G application results shown in README",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_rewards_eda.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "target": "file:Results_Analysis/parse_evaluator_results.py",
+      "type": "related",
+      "description": "Sibling analysis for V2G statistics and multi-objective performance",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "target": "document:README.md",
+      "type": "documents",
+      "description": "Compares V2G algorithm performance across profit, satisfaction, and grid metrics",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Results_Analysis/v2g_stats_eda.py",
+      "type": "uses",
+      "target": "file:markup:requirements.txt",
+      "description": "Requires pandas, matplotlib, seaborn, numpy",
+      "direction": "forward"
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:markup:requirements.txt",
+      "type": "documents",
+      "description": "README documents the dependencies and environment setup",
+      "direction": "forward"
+    }
+  ]
+}
